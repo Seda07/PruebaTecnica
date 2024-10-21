@@ -1,0 +1,30 @@
+Cree una API REST con FastAPI que tenga lo siguiente:
+
+- Un endpoint que recibe una carga útil JSON en el siguiente formato mediante solicitud
+tipo POST (los valores son de ejemplo):
+
+{
+"precio": 999,99, (tipo: flotante)
+"gente": 4, (tipo: int)
+"tip": 20.40 (tipo: float, porcentaje)
+}
+
+En base a los datos recibidos debe calcular cuánto dinero es para el "tip",
+sumarlo al "precio" y dividirlo entre las personas que sean. Devolver el precio a
+pagar por persona
+
+- Crea un Dockerfile que construye una imagen para arrancar el servicio.
+
+Extras:
+- Utilizar "black" para lintear y estilizar el código
+- A ser posible, utilizar "poetry" para gestionar las dependencias, en vez de
+pepita
+- Crear un test unitario que compruebe si un endpoint funciona correctamente
+
+Endpoint: http://127.0.0.1:8000/calcular
+
+{
+  "precio": 999.99,
+  "gente": 4,
+  "tip": 20.40
+}
