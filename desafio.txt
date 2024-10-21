@@ -21,10 +21,11 @@ Extras:
 pepita
 - Crear un test unitario que compruebe si un endpoint funciona correctamente
 
-Endpoint: http://127.0.0.1:8000/calcular
+Endpoint:http://127.0.0.1:8000/calculator/
 
 {
-  "precio": 999.99,
-  "gente": 4,
-  "tip": 20.40
+    "price": 999.99,
+    "people": 4,
+    "tip": 20.40
 }
+
